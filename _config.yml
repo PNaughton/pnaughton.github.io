@@ -1,14 +1,8 @@
-markdown: rdiscount
+safe: false
+plugins: ./_plugins
 pygments: true
-permalink: /posts/:title
-auto: true
-rdiscount:
-  extensions: [smart]
+sass:
+    syntax: scss        # scss|sass
+    style:  compressed  # nested|expanded|compact|compressed
 
-name: Perry Naughton
-url: http://perrynaughton.com
-description: Perry's Personal Site
-twitter: NaughtonPerry
-github: PNaughton
-
-gravatar_url: http://www.gravatar.com/avatar/43dbcc9f8b881754cfd3284f10b813d2
+exclude: [ '*.sublime*', 'README.md' ]

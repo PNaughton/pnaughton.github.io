@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang='en'>
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+	<title>Perry Naughton</title>
+
+	<link href='http://fonts.googleapis.com/css?family=Fanwood+Text|IM+Fell+Double+Pica+SC' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Inconsolata|Droid+Serif' rel='stylesheet' type='text/css'>
+	<link rel='stylesheet' href='/static/css/layout.css' type='text/css' rel='stylesheet'>
+	<link rel='shortcut icon' href='favicon.ico'>
+</head>
+<body>
+	<div class='container_12'>
+		<div class='header'>
+			<div id='big-name' class='grid_5'>
+				Perry Naughton
+			</div>
+			<div id='navbar' class='grid_7'>
+				<span title='about me' id='who_am_i_tab' class='ido selected' data-page='who_am_i'>
+					<span class='about'>
+					</span>
+				</span>
+				<span title='news' id='news_tab' class='ido' data-page='news'>
+					<span class='news'>
+					</span>
+				</span>
+				<span title='research' id='research_tab' class='ido' data-page='research'>
+					<span class='research'>
+					</span>
+				</span>
+				<span class='ido' data-page='none'>
+					<a href='http://github.com/a5huynh'>
+					</a>
+				</span>
+				<span title='blog' id='tech_tab' class='ido' data-page='blog'>
+					<span class='brain'></span>
+				</span>
+			</div>
+			<div id='social-icons' class='grid_8'>
+				<a class='email-icon' href='http://www.google.com/recaptcha/mailhide/d?k=01yIItao3rxu7drzm2LWp3IA==&c=cLfqpq4eZLbMEpCClTxBkR_8UlFxZZMvETMXYfDUJgM='>
+						&nbsp;
+				</a>
+				<a class='twitter-icon' href='https://twitter.com/NaughtonPerry'>
+					&nbsp;
+				</a>
+				<a class='linkedin-icon' href='https://linkedin.com/pub/perry-naughton/45/7a2/35b'>
+					&nbsp;
+				</a>
+			</div>
+			
+		</div>
+		<div class='section'>
+			<div class='infopages grid_12'>
+				<div id='who_am_i' class='infopage inview'>  
+					<div>
+						{% include about_welcome.html %}
+					</div>
+				</div>
+				<div id='news' class='infopage'>
+					<div>
+						{% include news.html %}
+					</div>
+				</div>
+				<div id='research' class='infopage'>
+					<div>
+						{% include research.html %}
+					</div>
+				</div>
+				<div id='tech' class='infopage'>
+					<div>
+						{% include tech.html %}
+					</div>
+				</div>
+				<div id='blog' class='infopage'>
+					<div>
+						{% include blog.html %}
+					</div>
+				</div>
+				<div id='acknowledge' class='infopage'>  
+					<div>
+						{% include acknowledge.html %}
+					</div>
+				</div>
+
+			</div>
+	</div>
+	<div class='footer container_12'>
+		<div class='grid_12'>
+			I pulled examples from many places for this site. Please see my<span id='acknowledge' class='ido' data-page='acknowledge'>acknowledgements.</span>
+		</div>
+	</div>
+	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js'></script>
+	<script type='text/javascript' src='/static/js/init.js'></script>
+</body>
+</html>
