@@ -32,7 +32,7 @@ change_long_word = function() {
 select_tab = function(tab) {
   var new_page;
   if (!(tab != null) || tab.length === 0) {
-    window.location.hash = '#Welcome';
+    window.location.hash = '#heytheresexy';
     return;
   }
   $('.selected').removeClass('selected');
