@@ -1,0 +1,327 @@
+// Font's used in the site
+$content-font: "Fanwood text", serif;
+$header-font: 'IM Fell Double Pica SC', serif;
+
+// Colors used in the site
+$purple: #2CE27C;
+$blue:   #1691d8;
+$grey:	 #999;
+$black:  #666;
+
+/* Import our HTML5 reset and 960 grid css */
+@import "reset";
+@import "960_12_col";
+
+body {
+}
+
+*::selection {
+	background: $purple;
+	color:white;
+}
+
+*::-webkit-selection {
+	background: $purple;
+	color:white;
+}
+
+*::-moz-selection {
+	background: $purple;
+	color:white;
+}
+
+body > div {
+	margin-top:16px;
+}
+
+em {
+	color: $blue;
+}
+
+h2, h3, h4, .header {
+	font-family: $header-font;
+	/* A nice easy-to-use auto-clearing technique */
+	overflow: hidden;
+	width: 100%;
+}
+
+a, a:hover, a:active, a:visited {
+	text-decoration: none;
+	color: $blue;
+	border-bottom:1px dotted $grey;
+
+	.image {
+		border: 0;
+	}
+}
+
+img {
+	vertical-align: middle;
+}
+
+#navbar {
+	margin-left:0;
+	display:inline-block;
+	font-size:24pt;
+	color: $black;
+}
+
+#latest-work {
+	margin-top:16px;
+	overflow:auto;
+
+	.grid_4 {
+		font-size:13px;
+	}
+}
+
+.section {
+	position: relative;
+ 	margin-top:16px;
+}
+
+.subheader {
+	font-size:16px;
+	color: $blue;
+	font-weight: normal;
+	font-family: $header-font;
+	margin-bottom:4px;
+}
+
+.article {
+	font-size:   16px;
+	font-family: $content-font;
+	line-height: 155%;
+	color:		 #000;
+	margin-bottom:16px;
+}
+
+.footer {
+	color: #AAA;
+	font-size:12px;
+}
+
+#big-name {
+	border-right:4px solid $purple;
+	font-size:48px;
+}
+
+#my-attrs {
+	float:left;
+	padding-left:20px;
+	padding-top:11px;
+	font-size:32px;
+	width: 288px;
+	margin-right:8px;
+}
+
+#navbar {
+
+	.ido > div {
+		padding-left: 104px;
+		display: inline-block;
+	}
+
+	.about {
+		background: url( '/static/img/surf.png' ) no-repeat;
+		display: inline-block;
+		width: 48px;
+		height: 48px;
+	}
+
+	.brain {
+		background: url( '/static/img/brain.png' ) no-repeat;
+		display: inline-block;
+		width: 62px;
+		height: 48px;
+	}
+
+	.news {
+		background: url( '/static/img/news.png' ) no-repeat;
+		display: inline-block;
+		width: 48px;
+		height: 48px;
+	}
+
+	.research {
+		background: url( '/static/img/science.png' ) no-repeat;
+		display: inline-block;
+		width: 48px;
+		height: 48px;
+	}
+
+	.gears {
+		background: url( '/static/img/gears.png' ) no-repeat;
+		display: inline-block;
+		width: 48px;
+		height: 48px;
+	}
+
+	@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+		.question-mark {
+			background: url( '/static/img/question-2x.png' ) no-repeat 32px 16px;
+			display: inline-block;
+			background-size: 96px 96px;
+		}
+
+		.newspaper {
+			background: url( '/static/img/newspaper-2x.png' ) no-repeat 32px 16px;
+			background-size: 48px 48px;
+		}
+
+		.radiation {
+			background: url( '/static/img/radiation-2x.png' ) no-repeat 32px 16px;
+			background-size: 48px 48px;
+		}
+
+		.github {
+			background: url( '/static/img/computer-2x.png' ) no-repeat 32px 16px;
+			background-size: 48px 48px;
+		}
+
+		.gears {
+			background: url( '/static/img/gears-2x.png' ) no-repeat 32px 16px;
+			background-size: 48px 48px;
+		}
+	}
+}
+
+#social-icons {
+	text-align:left;
+	padding-top:8px;
+
+	> a {
+		display:inline-block;
+		margin-top:4px;
+		width: 24px;
+		height: 24px;
+		border:0;
+	}
+
+	.email-icon {
+		background: url( '/static/img/email.png' ) no-repeat;
+	}
+
+	.twitter-icon {
+		background: url( '/static/img/twitter.png' ) no-repeat;
+	}
+
+	.linkedin-icon {
+		background: url( '/static/img/linkedin.png' ) no-repeat;
+	}
+
+	@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+		.email-icon {
+			background: url( '/static/img/email-2x.png' ) no-repeat;
+			background-size: 24px 24px;
+		}
+
+		.twitter-icon {
+			background: url( '/static/img/twitter-2x.png' ) no-repeat;
+			background-size: 24px 24px;
+		}
+
+		.linkedin-icon {
+			background: url( '/static/img/linkedin-2x.png' ) no-repeat;
+			background-size: 24px 24px;
+		}
+	}
+}
+
+/* Header's inside article will have a nice code comment effect */
+.article {
+
+	margin-bottom:32px;
+
+	a.header {
+		font-family: 	$header-font;
+		font-size:		26px;
+		font-weight:	normal;
+		color:			$purple;
+		text-decoration: none;
+		border-bottom:1px dotted $grey;
+	}
+
+	h2 {
+		font-family: 	$header-font;
+		font-size:		26px;
+		font-weight:	normal;
+		color:			$purple;
+		padding:0;
+		margin: 0 0 8px 0;
+	}
+
+
+	h3 {
+		font-size: 20px;
+		font-weight: normal;
+		font-style: normal;
+		padding:0;
+		margin: 16px 0 0 0;
+	}
+
+	.github-link {
+		margin-top:8px;
+		font-size:12px;
+		padding:8px;
+	}
+
+	p {
+		line-height: 28px;
+	}
+}
+
+/* Tab styles */
+.ido {
+	width: 398px;
+	cursor:pointer;
+	color: #AAA;
+	border-left:4px solid transparent;
+	margin-bottom:16px;
+
+	a {
+		color: #DDD !important;
+	}
+
+	div {
+		padding: 16px 32px;
+
+		img {
+			margin-right: 16px;
+		}
+	}
+}
+
+
+/* Content pages */
+.infopages {
+	margin-right:0;
+}
+
+.infopage {
+	padding-right:16px;
+	display:none;
+}
+
+.inview {
+	display:block !important;
+}
+
+/* Some special style for the news clipping page */
+ul.news_clippings {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+
+	li {
+		margin-bottom:16px;
+
+		a {
+			font-style: italic;
+		}
+	}
+
+	.caption {
+		font-size: 14px;
+	}
+}

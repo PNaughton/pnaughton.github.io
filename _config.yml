@@ -1,0 +1,8 @@
+safe: false
+plugins: ./_plugins
+pygments: true
+sass:
+    syntax: scss        # scss|sass
+    style:  compressed  # nested|expanded|compact|compressed
+
+exclude: [ '*.sublime*', 'README.md' ]
