@@ -1,9 +1,9 @@
 // Font's used in the site
-$content-font: "Fanwood text", serif;
-$header-font: 'IM Fell Double Pica SC', serif;
+$header-font: "Inconsolata", sans-serif;
+$content-font: "Droid Serif", Georgia, 'Times New Roman', serif;
 
 // Colors used in the site
-$purple: #2CE27C;
+$orange: #ff8000;
 $blue:   #1691d8;
 $grey:	 #999;
 $black:  #666;
@@ -16,17 +16,17 @@ body {
 }
 
 *::selection {
-	background: $purple;
+	background: $orange;
 	color:white;
 }
 
 *::-webkit-selection {
-	background: $purple;
+	background: $orange;
 	color:white;
 }
 
 *::-moz-selection {
-	background: $purple;
+	background: $orange;
 	color:white;
 }
 
@@ -61,7 +61,6 @@ img {
 
 #navbar {
 	margin-left:0;
-	display:inline-block;
 	font-size:24pt;
 	color: $black;
 }
@@ -102,8 +101,8 @@ img {
 }
 
 #big-name {
-	border-right:4px solid $purple;
-	font-size:48px;
+	border-right:4px solid $orange;
+	font-size:84px;
 }
 
 #my-attrs {
@@ -119,49 +118,33 @@ img {
 
 	.ido > div {
 		padding-left: 104px;
-		display: inline-block;
 	}
 
-	.about {
-		background: url( '/static/img/surf.png' ) no-repeat;
-		display: inline-block;
-		width: 48px;
-		height: 48px;
+	.question-mark {
+		background: url( '/static/img/question.png' ) no-repeat 32px 16px;
 	}
 
-	.brain {
-		background: url( '/static/img/brain.png' ) no-repeat;
-		display: inline-block;
-		width: 62px;
-		height: 48px;
+	.newspaper {
+		background: url( '/static/img/newspaper.png' ) no-repeat 32px 16px;
 	}
 
-	.news {
-		background: url( '/static/img/news.png' ) no-repeat;
-		display: inline-block;
-		width: 48px;
-		height: 48px;
+	.radiation {
+		background: url( '/static/img/science.png' ) no-repeat 32px 16px;
 	}
 
-	.research {
-		background: url( '/static/img/science.png' ) no-repeat;
-		display: inline-block;
-		width: 48px;
-		height: 48px;
+	.github {
+		background: url( '/static/img/computer.png' ) no-repeat 32px 16px;
+		padding-left: 104px;
 	}
 
 	.gears {
-		background: url( '/static/img/gears.png' ) no-repeat;
-		display: inline-block;
-		width: 48px;
-		height: 48px;
+		background: url( '/static/img/gears.png' ) no-repeat 32px 16px;
 	}
 
 	@media only screen and (-webkit-min-device-pixel-ratio: 2) {
 		.question-mark {
 			background: url( '/static/img/question-2x.png' ) no-repeat 32px 16px;
-			display: inline-block;
-			background-size: 96px 96px;
+			background-size: 48px 48px;
 		}
 
 		.newspaper {
@@ -187,11 +170,11 @@ img {
 }
 
 #social-icons {
-	text-align:left;
+	text-align:right;
 	padding-top:8px;
 
 	> a {
-		display:inline-block;
+		display:block;
 		margin-top:4px;
 		width: 24px;
 		height: 24px;
@@ -237,16 +220,20 @@ img {
 		font-family: 	$header-font;
 		font-size:		26px;
 		font-weight:	normal;
-		color:			$purple;
+		color:			$orange;
 		text-decoration: none;
 		border-bottom:1px dotted $grey;
+	}
+
+	h2:before {
+		content: '# ';
 	}
 
 	h2 {
 		font-family: 	$header-font;
 		font-size:		26px;
 		font-weight:	normal;
-		color:			$purple;
+		color:			$orange;
 		padding:0;
 		margin: 0 0 8px 0;
 	}
@@ -275,7 +262,7 @@ img {
 .ido {
 	width: 398px;
 	cursor:pointer;
-	color: #AAA;
+	color: #DDD;
 	border-left:4px solid transparent;
 	margin-bottom:16px;
 
@@ -292,6 +279,18 @@ img {
 	}
 }
 
+.ido:hover {
+	border-left:4px solid $grey !important;
+	color:#000 !important;
+
+	a {
+		color:#000 !important;
+	}
+}
+
+.selected {
+	color:#000 !important;
+}
 
 /* Content pages */
 .infopages {
@@ -319,9 +318,12 @@ ul.news_clippings {
 		a {
 			font-style: italic;
 		}
+
 	}
 
 	.caption {
 		font-size: 14px;
 	}
 }
+
+@import "_citations";
