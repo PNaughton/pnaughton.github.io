@@ -17,7 +17,8 @@ resume: false
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-url: https://pnaughton.github.io
+#url: https://pnaughton.github.io
+url: https://www.perrynaughton.com
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
@@ -60,8 +61,6 @@ authors:
         bio: Ph.D. Candidate @ UCSD
         external-image: false
         picture: assets/images/naughton.png
-        picture2: assets/images/field.jpg
-        twitter: johndoe
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
