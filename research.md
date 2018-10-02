@@ -22,7 +22,7 @@ layout: page
 You can also visit my  <a href="https://scholar.google.com/citations?user=U33dfecAAAAJ&hl=en&oi=ao">Google Scholar</a> page.
 
 <ul class="skill-list">
-       <li>P. Naughton, P. Roux, C. Schurgers, R. Kastner, J. S. Jaffe, and P. L. D. Roberts, “Self-localization of a deforming swarm of underwater vehicles using impulsive sound sources of opportunity” Submitted to IEEE Access Special Issue on Underwater Wireless Communications and Networking.</li>
+       <li>P. Naughton, P. Roux, C. Schurgers, R. Kastner, J. S. Jaffe, and P. L. D. Roberts, “Self-localization of a deforming swarm of underwater vehicles using impulsive sound sources of opportunity” IEEE Access, vol. 6, 2018. </li>
        <li>P. Naughton, P. Roux, R. Yeakle, C. Schurgers, R. Kastner, J. S. Jaffe, and P. L. D. Roberts, “Ambient noise correlations on a mobile, deformable array,” The Journal of the Acoustical Society of America, vol. 140, no. 6, pp. 4260–4270, 2016.</li>
        <li>P. Naughton, C. Edwards, V. Petrovic, R. Kastner, F. Kuester, and S. Sandin, “Scaling the annotation of subtidal marine habitats,” International Conference on UnderWater Networks and Systems (WUWNET), 2015.</li>
        <li>P. Bojakowski, K. C. Bojakowski, and P. Naughton, “A comparison between structure from motion and direct survey methodologies on the warwick,” Journal of Maritime Archaeology, vol. 10, no. 2, pp. 159–180, 2015.</li>
